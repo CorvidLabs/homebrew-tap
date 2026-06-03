@@ -4,12 +4,12 @@ class Fledge < Formula
   license "MIT"
   # NOTE: This file is updated POST-release by .github/workflows/post-release-formula.yml
   # in the fledge repo. Don't bump manually — shas don't exist at bump time.
-  version "1.4.2"
+  version "1.4.3"
 
   on_macos do
     on_arm do
       url "https://github.com/CorvidLabs/fledge/releases/download/v#{version}/fledge-macos-aarch64"
-      sha256 "d0d787baf0d68b238ae5cb63389c01e2866848aebfd3c8dc55e989a1b5a0da9f"
+      sha256 "cd89694f556142cf59222cf755f5e0fc8862f6c1cf2fc93cb9ac97fd96ee3cf6"
 
       def install
         bin.install "fledge-macos-aarch64" => "fledge"
@@ -18,7 +18,7 @@ class Fledge < Formula
 
     on_intel do
       url "https://github.com/CorvidLabs/fledge/releases/download/v#{version}/fledge-macos-x86_64"
-      sha256 "bad906a974c508ea5f2ae165a244b52d695b739550da4ff3aa8133bba0029974"
+      sha256 "0f90666e3b62f55dc12dc0a4f95fba8d70d31d1082f4ef35b9018ba7c98423db"
 
       def install
         bin.install "fledge-macos-x86_64" => "fledge"
@@ -29,7 +29,7 @@ class Fledge < Formula
   on_linux do
     on_intel do
       url "https://github.com/CorvidLabs/fledge/releases/download/v#{version}/fledge-linux-x86_64"
-      sha256 "244ed751087c20488faaf37496cb5cc3c8a60abf04e102d21a85b031e429b9e5"
+      sha256 "4d5b873edfc76674beb3923da2368fe7deb121f551979f78b072b5f0f117cbc6"
 
       def install
         bin.install "fledge-linux-x86_64" => "fledge"
