@@ -1,8 +1,8 @@
 class Threemd < Formula
   desc "CLI for the 3md format: Markdown extended along one free Z axis"
   homepage "https://github.com/CorvidLabs/3md"
-  url "https://github.com/CorvidLabs/3md/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "b824aefab10abcd7fa6f24db4b90f14af848899fe793ef286132b198e036603d"
+  url "https://github.com/CorvidLabs/3md/archive/refs/tags/v1.8.0.tar.gz"
+  sha256 "74434a0e16f2c24e3d678a5148a7f01dcd8c430c0067c9fa93ad115db77fabf9"
   license "MIT"
   head "https://github.com/CorvidLabs/3md.git", branch: "main"
 
