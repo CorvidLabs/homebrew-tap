@@ -1,13 +1,13 @@
 class Augur < Formula
   desc "Graded trust for code changes with deterministic risk scoring"
   homepage "https://github.com/CorvidLabs/augur"
-  version "0.4.1"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/CorvidLabs/augur/releases/download/v#{version}/augur-macos-universal"
-      sha256 "61b91414591a84975a05515f89b4cdf413e2364781f0a46c2c7024e6d5e6a0e2"
+      url "https://github.com/CorvidLabs/augur/releases/download/#{version}/augur-macos-universal"
+      sha256 "9398827d87fbaa02ac986957438676140eba746255e742b6215073c7134e1cbe"
 
       define_method(:install) do
         bin.install "augur-macos-universal" => "augur"
@@ -15,8 +15,8 @@ class Augur < Formula
     end
 
     on_intel do
-      url "https://github.com/CorvidLabs/augur/releases/download/v#{version}/augur-macos-universal"
-      sha256 "61b91414591a84975a05515f89b4cdf413e2364781f0a46c2c7024e6d5e6a0e2"
+      url "https://github.com/CorvidLabs/augur/releases/download/#{version}/augur-macos-universal"
+      sha256 "9398827d87fbaa02ac986957438676140eba746255e742b6215073c7134e1cbe"
 
       define_method(:install) do
         bin.install "augur-macos-universal" => "augur"
@@ -26,8 +26,8 @@ class Augur < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/CorvidLabs/augur/releases/download/v#{version}/augur-linux-x86_64"
-      sha256 "fcba3127eccaa22b65d8a075831773cf8f5f10d170d7ee59d497d0002c2fa0ee"
+      url "https://github.com/CorvidLabs/augur/releases/download/#{version}/augur-linux-x86_64"
+      sha256 "b408f5f690187072e6ffd98d3bb26050847c37e065f7ca3bfa22492d4193f4bd"
 
       define_method(:install) do
         bin.install "augur-linux-x86_64" => "augur"
@@ -36,6 +36,6 @@ class Augur < Formula
   end
 
   test do
-    assert_match "0.4.1", shell_output("#{bin}/augur --version")
+    assert_match "1.0.0", shell_output("#{bin}/augur --version")
   end
 end
