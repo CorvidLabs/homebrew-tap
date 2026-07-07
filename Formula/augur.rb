@@ -7,7 +7,7 @@ class Augur < Formula
   on_macos do
     on_arm do
       url "https://github.com/CorvidLabs/augur/releases/download/#{version}/augur-macos-universal"
-      sha256 "9398827d87fbaa02ac986957438676140eba746255e742b6215073c7134e1cbe"
+      sha256 "c260e6b22fc5991e145e189798378f2a215235ccbc23ff168c908bfa349701fe"
 
       define_method(:install) do
         bin.install "augur-macos-universal" => "augur"
@@ -16,7 +16,7 @@ class Augur < Formula
 
     on_intel do
       url "https://github.com/CorvidLabs/augur/releases/download/#{version}/augur-macos-universal"
-      sha256 "9398827d87fbaa02ac986957438676140eba746255e742b6215073c7134e1cbe"
+      sha256 "c260e6b22fc5991e145e189798378f2a215235ccbc23ff168c908bfa349701fe"
 
       define_method(:install) do
         bin.install "augur-macos-universal" => "augur"
@@ -27,7 +27,7 @@ class Augur < Formula
   on_linux do
     on_intel do
       url "https://github.com/CorvidLabs/augur/releases/download/#{version}/augur-linux-x86_64"
-      sha256 "b408f5f690187072e6ffd98d3bb26050847c37e065f7ca3bfa22492d4193f4bd"
+      sha256 "1c72cbb231ed549fde745794696e222e3cc624562f8e954c17f9894e731cd718"
 
       define_method(:install) do
         bin.install "augur-linux-x86_64" => "augur"
