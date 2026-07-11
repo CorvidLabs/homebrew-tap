@@ -26,7 +26,6 @@ jobs:
       - name: Install pinned Trust components
         env:
           HOMEBREW_NO_AUTO_UPDATE: "1"
-          HOMEBREW_NO_INSTALL_FROM_API: "1"
         run: >-
           brew install
           corvidlabs/tap/fledge
@@ -42,7 +41,6 @@ jobs:
       - name: Run formula tests
         env:
           HOMEBREW_NO_AUTO_UPDATE: "1"
-          HOMEBREW_NO_INSTALL_FROM_API: "1"
         run: |
           brew test corvidlabs/tap/fledge
           brew test corvidlabs/tap/spec-sync
