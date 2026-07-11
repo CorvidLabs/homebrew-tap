@@ -10,13 +10,11 @@ class Fledge < Formula
     on_arm do
       url "https://github.com/CorvidLabs/fledge/releases/download/v#{version}/fledge-macos-aarch64"
       sha256 "21d0916d52ef14e6d33e3967417773369e047a0311e66bbb1eecc8f69332a040"
-
     end
 
     on_intel do
       url "https://github.com/CorvidLabs/fledge/releases/download/v#{version}/fledge-macos-x86_64"
       sha256 "9b93babd60f87dc67c1df1902b35ab71c06912a267821c05688e6cd842c71072"
-
     end
   end
 
@@ -24,7 +22,6 @@ class Fledge < Formula
     on_intel do
       url "https://github.com/CorvidLabs/fledge/releases/download/v#{version}/fledge-linux-x86_64"
       sha256 "9a2c5a0db698811052ad741dd8da5a3e8af5e46797f11b6cc59dffbd49917170"
-
     end
   end
 

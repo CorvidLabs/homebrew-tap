@@ -8,13 +8,11 @@ class Augur < Formula
     on_arm do
       url "https://github.com/CorvidLabs/augur/releases/download/#{version}/augur-macos-universal"
       sha256 "c260e6b22fc5991e145e189798378f2a215235ccbc23ff168c908bfa349701fe"
-
     end
 
     on_intel do
       url "https://github.com/CorvidLabs/augur/releases/download/#{version}/augur-macos-universal"
       sha256 "c260e6b22fc5991e145e189798378f2a215235ccbc23ff168c908bfa349701fe"
-
     end
   end
 
@@ -22,7 +20,6 @@ class Augur < Formula
     on_intel do
       url "https://github.com/CorvidLabs/augur/releases/download/#{version}/augur-linux-x86_64"
       sha256 "1c72cbb231ed549fde745794696e222e3cc624562f8e954c17f9894e731cd718"
-
     end
   end
 
