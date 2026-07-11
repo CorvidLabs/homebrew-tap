@@ -19,9 +19,14 @@ jobs:
     steps:
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: Homebrew/actions/setup-homebrew@18fcb8e3e06b4247c676c506750dc95ea7226479 # main, 2026-07-10
+      - name: Verify tap uses checked-out pull request
+        run: test "$(realpath "$(brew --repository corvidlabs/tap)")" = "$(realpath "$GITHUB_WORKSPACE")"
       - name: Style formulae
         run: brew style Formula/fledge.rb Formula/spec-sync.rb Formula/augur.rb Formula/attest.rb
       - name: Install pinned Trust components
+        env:
+          HOMEBREW_NO_AUTO_UPDATE: "1"
+          HOMEBREW_NO_INSTALL_FROM_API: "1"
         run: >-
           brew install
           corvidlabs/tap/fledge
@@ -35,6 +40,9 @@ jobs:
           augur --version
           attest --version
       - name: Run formula tests
+        env:
+          HOMEBREW_NO_AUTO_UPDATE: "1"
+          HOMEBREW_NO_INSTALL_FROM_API: "1"
         run: |
           brew test corvidlabs/tap/fledge
           brew test corvidlabs/tap/spec-sync
