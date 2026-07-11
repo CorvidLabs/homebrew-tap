@@ -29,12 +29,9 @@ class SpecSync < Formula
   end
 
   def install
-    binary = if OS.mac?
-      Hardware::CPU.arm? ? "specsync-macos-aarch64" : "specsync-macos-x86_64"
-    else
-      Hardware::CPU.arm? ? "specsync-linux-aarch64" : "specsync-linux-x86_64"
-    end
-    bin.install binary => "specsync"
+    os = OS.mac? ? "macos" : "linux"
+    arch = Hardware::CPU.arm? ? "aarch64" : "x86_64"
+    bin.install "specsync-#{os}-#{arch}" => "specsync"
   end
 
   test do
