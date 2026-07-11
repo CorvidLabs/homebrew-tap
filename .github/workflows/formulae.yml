@@ -23,11 +23,11 @@ jobs:
         run: brew style Formula/fledge.rb Formula/spec-sync.rb Formula/augur.rb Formula/attest.rb
       - name: Install pinned Trust components
         run: >-
-          brew install --formula
-          ./Formula/fledge.rb
-          ./Formula/spec-sync.rb
-          ./Formula/augur.rb
-          ./Formula/attest.rb
+          brew install
+          corvidlabs/tap/fledge
+          corvidlabs/tap/spec-sync
+          corvidlabs/tap/augur
+          corvidlabs/tap/attest
       - name: Verify installed commands
         run: |
           fledge --version
@@ -36,7 +36,7 @@ jobs:
           attest --version
       - name: Run formula tests
         run: |
-          brew test fledge
-          brew test spec-sync
-          brew test augur
-          brew test attest
+          brew test corvidlabs/tap/fledge
+          brew test corvidlabs/tap/spec-sync
+          brew test corvidlabs/tap/augur
+          brew test corvidlabs/tap/attest
