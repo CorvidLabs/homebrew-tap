@@ -1,0 +1,7 @@
+[tasks]
+syntax = "bash scripts/validate-formulae.sh"
+style = "brew style Formula/fledge.rb Formula/spec-sync.rb Formula/augur.rb Formula/attest.rb Formula/corvid-trust.rb"
+
+[lanes.verify]
+description = "Validate and style every Trust toolchain formula"
+steps = ["syntax", "style"]
