@@ -1,8 +1,9 @@
 class CorvidTrust < Formula
   desc "Unified lifecycle, contract, risk, and provenance gate"
   homepage "https://github.com/CorvidLabs/trust"
-  url "https://github.com/CorvidLabs/trust/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "ac09fcad5c9dcbb50c1cedeeb1815d5f5f4e65a7cee68733fd53e6c0f5a9689e"
+  url "https://github.com/CorvidLabs/trust/archive/refs/tags/v1.1.1.tar.gz"
+  version "1.1.1"
+  sha256 "bc8fd2a311c56209488d8b0c1a2fd30b3e6d0e5c5536874c6112e3c460d1b77c"
   license "MIT"
 
   depends_on "corvidlabs/tap/attest"
