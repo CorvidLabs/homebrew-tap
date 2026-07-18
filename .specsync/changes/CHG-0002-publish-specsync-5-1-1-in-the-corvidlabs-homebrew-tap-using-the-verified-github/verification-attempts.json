@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "attempts": [
+    {
+      "timestamp": 1784339001,
+      "commit": "6c39150dbb5eae3c4e09bb04b6d6b0f5493ce96f",
+      "contract_digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
+      "workspace_digest": "0c6393c4cc392a0f05870a79644ec48c1b3fe356929af0c97c0e526593011bec",
+      "passed": true,
+      "commands": [
+        {
+          "command": "bash scripts/validate-formulae.sh",
+          "success": true,
+          "exit_code": 0
+        }
+      ],
+      "requirement_ids": []
+    },
+    {
+      "timestamp": 1784339095,
+      "commit": "ea65cc39b8bc95ab8de87c94d43f0f6ea31ab839",
+      "contract_digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
+      "workspace_digest": "0c6393c4cc392a0f05870a79644ec48c1b3fe356929af0c97c0e526593011bec",
+      "passed": true,
+      "commands": [
+        {
+          "command": "bash scripts/validate-formulae.sh",
+          "success": true,
+          "exit_code": 0
+        }
+      ],
+      "requirement_ids": []
+    },
+    {
+      "timestamp": 1784339193,
+      "commit": "8793eeec450108c6f2bb94cccfa0cae3bd8d9162",
+      "contract_digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
+      "workspace_digest": "0c6393c4cc392a0f05870a79644ec48c1b3fe356929af0c97c0e526593011bec",
+      "passed": true,
+      "commands": [
+        {
+          "command": "bash scripts/validate-formulae.sh",
+          "success": true,
+          "exit_code": 0
+        }
+      ],
+      "requirement_ids": []
+    },
+    {
+      "timestamp": 1784340558,
+      "commit": "744a0bbdf4678235895f77da707b53fa443c9bbb",
+      "contract_digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
+      "workspace_digest": "4fc3c69936d98faad9fc565a3de509173ca5da93a897eb4d3a5e9d595c36ef1a",
+      "passed": true,
+      "commands": [
+        {
+          "command": "bash scripts/validate-formulae.sh",
+          "success": true,
+          "exit_code": 0
+        }
+      ],
+      "requirement_ids": []
+    },
+    {
+      "timestamp": 1784341028,
+      "commit": "5497a14785aaf6e265d0c550e74101923bf8a3ed",
+      "contract_digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
+      "workspace_digest": "4fc3c69936d98faad9fc565a3de509173ca5da93a897eb4d3a5e9d595c36ef1a",
+      "passed": true,
+      "commands": [
+        {
+          "command": "bash scripts/validate-formulae.sh",
+          "success": true,
+          "exit_code": 0
+        }
+      ],
+      "requirement_ids": []
+    }
+  ]
+}

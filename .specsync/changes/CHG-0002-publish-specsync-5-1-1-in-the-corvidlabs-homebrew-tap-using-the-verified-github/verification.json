@@ -1,0 +1,41 @@
+{
+  "timestamp": 1784341028,
+  "commit": "5497a14785aaf6e265d0c550e74101923bf8a3ed",
+  "contract_digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
+  "workspace_digest": "4fc3c69936d98faad9fc565a3de509173ca5da93a897eb4d3a5e9d595c36ef1a",
+  "acceptance_input_digest": "e0717345302f7284a001e02778e5813a26ec646773101606b80ad45b1a51996f",
+  "acceptance_manifest": {
+    "schema_version": 1,
+    "entries": [
+      {
+        "path": ".specsync/change-sequence.json",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "a3887b8f41005117df027d2036f097d7573296addddedc99401860a3d1db027c",
+        "entry_digest": "7b35760dcaae7549e11a3e76020b8cc641855a177cda6a65434010c64e3883b7",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "Formula/spec-sync.rb",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "bca4c8e8471aa459f0aeee5096ef42d1aa10240ca6e9cb90c10d8ea9faed9900",
+        "entry_digest": "f41bea5dd39706ae69464d3aaf9f5f856c0482627e80c313bd23cab078415c57",
+        "owners": [
+          "@exact:delivery"
+        ]
+      }
+    ]
+  },
+  "passed": true,
+  "commands": [
+    {
+      "command": "bash scripts/validate-formulae.sh",
+      "success": true,
+      "exit_code": 0
+    }
+  ],
+  "requirement_ids": []
+}

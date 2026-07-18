@@ -1,0 +1,33 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "0xLeif",
+      "timestamp": 1784340524,
+      "digest": "f75039a1cdac9c01d1f6c0dd1dfd97d076e976d67e5169913e243abb05502724",
+      "note": "Approved for PR #14 formula dependency and Trust workflow CI parity corrections."
+    },
+    {
+      "gate": "definition",
+      "actor": "0xLeif",
+      "timestamp": 1784341228,
+      "digest": "c5ae785d6403e29a62fcaef919ac642d37ce5bc49c1bd7d334a3f268e9fd7ed8",
+      "note": "Reapproved after recording the completed local syntax, style, strict lifecycle, Augur, and Trust verification tasks."
+    },
+    {
+      "gate": "definition",
+      "actor": "0xLeif",
+      "timestamp": 1784341872,
+      "digest": "49c555dfa37c8da64d586937b06f1c783c08b1406af6a9346362fb01d915cf3b",
+      "note": "Reapproved after recording the Trust v1.0.1 validated local mirror and all hosted PR #14 checks passing."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "0xLeif",
+      "timestamp": 1784342034,
+      "digest": "7682586892f2bae1e7c9c34b083b7ba96ba5d336a9dccb33f9af4b110b9224f4",
+      "note": "Accepted after local and hosted macOS, Ubuntu, Trust, and CodeQL verification passed with the validated SpecSync 5.1.1 mirror."
+    }
+  ],
+  "reopenings": []
+}
