@@ -45,6 +45,21 @@
         }
       ],
       "requirement_ids": []
+    },
+    {
+      "timestamp": 1784340558,
+      "commit": "744a0bbdf4678235895f77da707b53fa443c9bbb",
+      "contract_digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
+      "workspace_digest": "4fc3c69936d98faad9fc565a3de509173ca5da93a897eb4d3a5e9d595c36ef1a",
+      "passed": true,
+      "commands": [
+        {
+          "command": "bash scripts/validate-formulae.sh",
+          "success": true,
+          "exit_code": 0
+        }
+      ],
+      "requirement_ids": []
     }
   ]
 }
