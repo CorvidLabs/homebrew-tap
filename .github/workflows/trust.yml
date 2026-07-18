@@ -18,6 +18,6 @@ jobs:
       - uses: Homebrew/actions/setup-homebrew@18fcb8e3e06b4247c676c506750dc95ea7226479 # main, 2026-07-10
       - name: CorvidLabs Trust gate
         id: trust
-        uses: CorvidLabs/trust@9d32b5786d2e9e4d39fc581c0091c721ee3d4226 # v1.0.0
+        uses: CorvidLabs/trust@c8f969a12209575877b5eca1ec557431621381e0 # v1.0.1
         with:
           specsync-version: "5.1.1"
