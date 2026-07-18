@@ -1,8 +1,34 @@
 {
-  "timestamp": 1784339095,
-  "commit": "ea65cc39b8bc95ab8de87c94d43f0f6ea31ab839",
+  "timestamp": 1784339193,
+  "commit": "8793eeec450108c6f2bb94cccfa0cae3bd8d9162",
   "contract_digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
   "workspace_digest": "0c6393c4cc392a0f05870a79644ec48c1b3fe356929af0c97c0e526593011bec",
+  "acceptance_input_digest": "9d5fa1177136c9534b91d59259737b6d5b8d11ee573aa659481acfc1a3ac96c3",
+  "acceptance_manifest": {
+    "schema_version": 1,
+    "entries": [
+      {
+        "path": ".specsync/change-sequence.json",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "a3887b8f41005117df027d2036f097d7573296addddedc99401860a3d1db027c",
+        "entry_digest": "7b35760dcaae7549e11a3e76020b8cc641855a177cda6a65434010c64e3883b7",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "Formula/spec-sync.rb",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "cd37f9edfc3ec86c3436904f5d0c37f9b9d448574896f329e09412c2e54bf245",
+        "entry_digest": "4571a5578f6302b4686cda66a048bf837154521150d656e6ce30c677683bf839",
+        "owners": [
+          "@exact:delivery"
+        ]
+      }
+    ]
+  },
   "passed": true,
   "commands": [
     {

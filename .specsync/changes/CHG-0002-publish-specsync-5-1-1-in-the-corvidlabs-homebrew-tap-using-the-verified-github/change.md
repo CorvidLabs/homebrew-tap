@@ -1,6 +1,6 @@
 ---
 id: CHG-0002-publish-specsync-5-1-1-in-the-corvidlabs-homebrew-tap-using-the-verified-github
-state: implementing
+state: accepted
 type: feature
 base_commit: 6c39150dbb5eae3c4e09bb04b6d6b0f5493ce96f
 ---
