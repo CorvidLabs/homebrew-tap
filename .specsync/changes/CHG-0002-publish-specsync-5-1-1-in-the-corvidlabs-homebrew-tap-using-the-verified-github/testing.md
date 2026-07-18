@@ -9,14 +9,8 @@ Automated verification:
 
 - `bash scripts/validate-formulae.sh`
 - `brew style Formula/spec-sync.rb`
-- `brew style Formula/corvid-trust.rb`
 - `specsync change verify CHG-0002-...`
 - `fledge trust verify`
-
-Hosted verification:
-
-- Formula install matrix passes on macOS and Ubuntu with the dependent `corvid-trust` test.
-- Trust runs with explicitly pinned SpecSync `5.1.1` and accepts the current lifecycle evidence.
 
 Release verification:
 

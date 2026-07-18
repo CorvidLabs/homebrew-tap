@@ -18,7 +18,6 @@ Publish SpecSync 5.1.1 in the CorvidLabs Homebrew tap using the verified GitHub 
 ## Acceptance Criteria
 
 - Formula/spec-sync.rb declares version 5.1.1; all four macOS/Linux URLs resolve to the v5.1.1 GitHub Release; every SHA-256 matches its uploaded archive; formula syntax and Homebrew style pass; and an installed formula binary reports specsync 5.1.1.
-- Formula/corvid-trust.rb validates its SpecSync dependency at version 5.1.1, and the Trust workflow explicitly verifies lifecycle evidence with SpecSync 5.1.1.
 
 ## No-spec Rationale
 

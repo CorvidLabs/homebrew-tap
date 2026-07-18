@@ -7,6 +7,5 @@ artifact: plan
 
 1. Read the `v5.1.1` archive digests from the completed GitHub Release.
 2. Update `Formula/spec-sync.rb` to version `5.1.1`, the four exact digests, and the version test.
-3. Update the `corvid-trust` formula dependency assertion and Trust workflow to validate SpecSync `5.1.1`.
-4. Run repository syntax/style validation and exercise the formula installation path.
-5. Publish the reviewed tap update and verify the remote formula advertises `5.1.1`.
+3. Run repository syntax/style validation and exercise the formula installation path.
+4. Publish the reviewed tap update and verify the remote formula advertises `5.1.1`.

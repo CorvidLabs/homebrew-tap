@@ -33,13 +33,3 @@ Acceptance criteria:
 
 - The formula test asserts the `5.1.1` version.
 - Formula syntax, repository validation, and Homebrew style checks pass.
-
-## REQ-homebrew-004 — Release validation parity
-
-The tap's dependent formula tests and Trust workflow SHALL validate SpecSync with version `5.1.1`.
-
-Acceptance criteria:
-
-- `Formula/corvid-trust.rb` expects `specsync --version` to report `5.1.1`.
-- The Trust workflow explicitly supplies SpecSync version `5.1.1` to the pinned Trust action.
-- Hosted macOS, Linux, and Trust checks pass.

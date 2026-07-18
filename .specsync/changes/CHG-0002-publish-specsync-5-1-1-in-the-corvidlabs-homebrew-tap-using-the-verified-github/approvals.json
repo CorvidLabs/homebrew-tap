@@ -27,6 +27,13 @@
       "timestamp": 1784340246,
       "digest": "724d044fb71bfe34b0997fa288c6924f78140e458c0d789f3dda059644e63c3a",
       "note": "Reapproved after adding the PR #14 formula dependency and Trust workflow CI corrections to its deterministic scope."
+    },
+    {
+      "gate": "definition",
+      "actor": "0xLeif",
+      "timestamp": 1784340523,
+      "digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
+      "note": "Reapproved after restoring its immutable accepted definition and retaining the formula test correction."
     }
   ],
   "reopenings": [

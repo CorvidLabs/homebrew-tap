@@ -1,0 +1,12 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "0xLeif",
+      "timestamp": 1784340524,
+      "digest": "f75039a1cdac9c01d1f6c0dd1dfd97d076e976d67e5169913e243abb05502724",
+      "note": "Approved for PR #14 formula dependency and Trust workflow CI parity corrections."
+    }
+  ],
+  "reopenings": []
+}

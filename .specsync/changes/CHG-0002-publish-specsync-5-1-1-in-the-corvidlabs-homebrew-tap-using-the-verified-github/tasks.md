@@ -11,6 +11,3 @@ artifact: tasks
 - [x] Confirm all four formula digests match the uploaded GitHub Release archives.
 - [x] Verify the current-platform archive checksum, layout, and `specsync 5.1.1` version output.
 - [x] Prepare the exact lifecycle evidence and hosted macOS/Linux install matrix for the reviewed PR.
-- [x] Align the `corvid-trust` formula dependency assertion with SpecSync `5.1.1`.
-- [x] Pin the Trust workflow's lifecycle validation to SpecSync `5.1.1`.
-- [ ] Re-run local and hosted formula, lifecycle, and Trust verification after the CI corrections.

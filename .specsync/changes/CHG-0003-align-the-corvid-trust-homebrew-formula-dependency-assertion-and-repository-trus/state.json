@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0003-align-the-corvid-trust-homebrew-formula-dependency-assertion-and-repository-trus",
+  "slug": "align-the-corvid-trust-homebrew-formula-dependency-assertion-and-repository-trus",
+  "title": "Align the Corvid Trust Homebrew formula dependency assertion and repository Trust workflow with SpecSync 5.1.1 so PR #14 formula and lifecycle CI pass",
+  "description": "Align the Corvid Trust Homebrew formula dependency assertion and repository Trust workflow with SpecSync 5.1.1 so PR #14 formula and lifecycle CI pass",
+  "kind": "feature",
+  "state": "approved",
+  "base_commit": "90f8b9f5a293e28e0b02cf996f54455ec58039a1",
+  "created_at": 1784340370,
+  "updated_at": 1784340524,
+  "affected_specs": [],
+  "affected_paths": [
+    "Formula/corvid-trust.rb",
+    ".github/workflows/trust.yml",
+    ".specsync/change-sequence.json"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "The tap has no canonical module specs; this follow-up only aligns formula dependency validation and the repository Trust workflow with the already published SpecSync release.",
+  "acceptance_criteria": [
+    "Formula/corvid-trust.rb validates specsync --version as 5.1.1; .github/workflows/trust.yml explicitly supplies specsync-version 5.1.1 to the pinned Trust action; hosted macOS, Ubuntu, and Trust checks pass."
+  ],
+  "selected_artifacts": [
+    "context",
+    "requirements",
+    "plan",
+    "tasks",
+    "testing",
+    "docs"
+  ],
+  "dependencies": [
+    "CHG-0002-publish-specsync-5-1-1-in-the-corvidlabs-homebrew-tap-using-the-verified-github"
+  ],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}
