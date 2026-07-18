@@ -1,0 +1,19 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "0xLeif",
+      "timestamp": 1784338496,
+      "digest": "783ae9fc461e41ccb972d18a12fd6acd4394eecafcbf693e837fd48a16018321",
+      "note": "Reapproved by 0xLeif after correcting public_contract to no."
+    },
+    {
+      "gate": "definition",
+      "actor": "0xLeif",
+      "timestamp": 1784338992,
+      "digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
+      "note": "Reapproved by 0xLeif after replacing circular post-verification tasks with truthful completed formula, checksum, and release-binary validation tasks."
+    }
+  ],
+  "reopenings": []
+}
