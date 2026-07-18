@@ -34,6 +34,13 @@
       "timestamp": 1784340523,
       "digest": "5bfe614ddc823eafa61182a81a6081d7d814f38b043dcdf25194dad7f3f552ea",
       "note": "Reapproved after restoring its immutable accepted definition and retaining the formula test correction."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "0xLeif",
+      "timestamp": 1784341049,
+      "digest": "16590e788fe131811295085d8981d4e7c68a898b7802dcde1b7038dfc53d75ab",
+      "note": "Reaccepted after verified formula test correction."
     }
   ],
   "reopenings": [

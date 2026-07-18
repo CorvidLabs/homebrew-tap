@@ -5,11 +5,11 @@
   "title": "Publish SpecSync 5.1.1 in the CorvidLabs Homebrew tap using the verified GitHub Release artifact checksums and validate the formula",
   "description": "Publish SpecSync 5.1.1 in the CorvidLabs Homebrew tap using the verified GitHub Release artifact checksums and validate the formula",
   "kind": "feature",
-  "state": "verifying",
+  "state": "accepted",
   "canonical_applied": true,
   "base_commit": "6c39150dbb5eae3c4e09bb04b6d6b0f5493ce96f",
   "created_at": 1784337557,
-  "updated_at": 1784340562,
+  "updated_at": 1784341049,
   "affected_specs": [],
   "affected_paths": [
     "Formula/spec-sync.rb",
