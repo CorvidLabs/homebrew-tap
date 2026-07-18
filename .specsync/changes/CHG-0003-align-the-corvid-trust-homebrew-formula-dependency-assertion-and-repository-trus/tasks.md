@@ -9,4 +9,4 @@ artifact: tasks
 - [x] Pin the repository Trust workflow to SpecSync `5.1.1`.
 - [x] Run local formula syntax and Homebrew style verification.
 - [x] Run SpecSync strict and Trust verification with SpecSync `5.1.1`.
-- [ ] Confirm all hosted PR checks pass.
+- [x] Confirm all hosted PR checks pass.
