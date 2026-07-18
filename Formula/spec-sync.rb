@@ -35,6 +35,6 @@ class SpecSync < Formula
   end
 
   test do
-    assert_match "5.1.1", shell_output("#{bin}/specsync --version")
+    assert_match version.to_s, shell_output("#{bin}/specsync --version")
   end
 end
