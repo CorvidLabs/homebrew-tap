@@ -16,8 +16,23 @@ jobs:
         with:
           fetch-depth: 0
       - uses: Homebrew/actions/setup-homebrew@18fcb8e3e06b4247c676c506750dc95ea7226479 # main, 2026-07-10
+      - name: Stage SpecSync 5.1.1 Trust mirror
+        shell: bash
+        env:
+          MIRROR: ${{ runner.temp }}/specsync-mirror
+          RELEASE_URL: https://github.com/CorvidLabs/spec-sync/releases/download/v5.1.1
+        run: |
+          set -euo pipefail
+          mkdir -p "$MIRROR"
+          curl -fsSL "$RELEASE_URL/specsync-linux-x86_64.tar.gz" \
+            -o "$MIRROR/specsync-linux-x86_64.tar.gz"
+          curl -fsSL "$RELEASE_URL/specsync-linux-x86_64.tar.gz.sha256" \
+            -o "$MIRROR/specsync-linux-x86_64.tar.gz.sha256"
+          cd "$MIRROR"
+          shasum -a 256 -c specsync-linux-x86_64.tar.gz.sha256
       - name: CorvidLabs Trust gate
         id: trust
         uses: CorvidLabs/trust@c8f969a12209575877b5eca1ec557431621381e0 # v1.0.1
         with:
           specsync-version: "5.1.1"
+          specsync-download-base-url: file://${{ runner.temp }}/specsync-mirror
