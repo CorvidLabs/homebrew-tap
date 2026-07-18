@@ -20,6 +20,13 @@
       "timestamp": 1784341872,
       "digest": "49c555dfa37c8da64d586937b06f1c783c08b1406af6a9346362fb01d915cf3b",
       "note": "Reapproved after recording the Trust v1.0.1 validated local mirror and all hosted PR #14 checks passing."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "0xLeif",
+      "timestamp": 1784342034,
+      "digest": "7682586892f2bae1e7c9c34b083b7ba96ba5d336a9dccb33f9af4b110b9224f4",
+      "note": "Accepted after local and hosted macOS, Ubuntu, Trust, and CodeQL verification passed with the validated SpecSync 5.1.1 mirror."
     }
   ],
   "reopenings": []

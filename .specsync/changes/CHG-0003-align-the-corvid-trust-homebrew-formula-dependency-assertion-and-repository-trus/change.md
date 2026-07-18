@@ -1,6 +1,6 @@
 ---
 id: CHG-0003-align-the-corvid-trust-homebrew-formula-dependency-assertion-and-repository-trus
-state: implementing
+state: accepted
 type: feature
 base_commit: 90f8b9f5a293e28e0b02cf996f54455ec58039a1
 ---

@@ -5,10 +5,11 @@
   "title": "Align the Corvid Trust Homebrew formula dependency assertion and repository Trust workflow with SpecSync 5.1.1 so PR #14 formula and lifecycle CI pass",
   "description": "Align the Corvid Trust Homebrew formula dependency assertion and repository Trust workflow with SpecSync 5.1.1 so PR #14 formula and lifecycle CI pass",
   "kind": "feature",
-  "state": "implementing",
+  "state": "accepted",
+  "canonical_applied": true,
   "base_commit": "90f8b9f5a293e28e0b02cf996f54455ec58039a1",
   "created_at": 1784340370,
-  "updated_at": 1784341872,
+  "updated_at": 1784342034,
   "affected_specs": [],
   "affected_paths": [
     "Formula/corvid-trust.rb",
