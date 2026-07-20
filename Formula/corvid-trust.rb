@@ -21,7 +21,7 @@ class CorvidTrust < Formula
   test do
     assert_match version.to_s, shell_output("#{bin}/fledge-trust --version")
     assert_match version.to_s, shell_output("fledge trust --version")
-    assert_match "5.1.1", shell_output("specsync --version")
+    assert_match "5.2.0", shell_output("specsync --version")
     assert_match "1.0.0", shell_output("augur --version")
     assert_match "1.0.0", shell_output("attest --version")
   end
