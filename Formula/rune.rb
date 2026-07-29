@@ -14,7 +14,7 @@ class Rune < Formula
     system gem, "build", "rune.gemspec"
     system gem, "install", "rune-#{version}.gem",
            "--ignore-dependencies", "--no-document", "--install-dir", libexec
-    bin.env_script_all_files(libexec/"bin", GEM_HOME: libexec)
+    (bin/"rune").write_env_script libexec/"bin/rune", GEM_HOME: libexec
   end
 
   test do
