@@ -35,6 +35,6 @@ class Fledge < Formula
   end
 
   test do
-    assert_match "1.7.0", shell_output("#{bin}/fledge --version")
+    assert_match version.to_s, shell_output("#{bin}/fledge --version")
   end
 end
