@@ -22,8 +22,8 @@ jobs:
       - name: Verify tap uses checked-out pull request
         run: test "$(realpath "$(brew --repository corvidlabs/tap)")" = "$(realpath "$GITHUB_WORKSPACE")"
       - name: Style formulae
-        run: brew style Formula/fledge.rb Formula/spec-sync.rb Formula/augur.rb Formula/attest.rb Formula/corvid-trust.rb
-      - name: Install pinned Trust components
+        run: brew style Formula/*.rb
+      - name: Install pinned formulae
         env:
           HOMEBREW_NO_AUTO_UPDATE: "1"
         run: >-
@@ -33,6 +33,7 @@ jobs:
           corvidlabs/tap/augur
           corvidlabs/tap/attest
           corvidlabs/tap/corvid-trust
+          corvidlabs/tap/rune
       - name: Verify installed commands
         run: |
           fledge --version
@@ -40,6 +41,7 @@ jobs:
           augur --version
           attest --version
           fledge trust --version
+          rune version --json
       - name: Run formula tests
         env:
           HOMEBREW_NO_AUTO_UPDATE: "1"
@@ -49,3 +51,4 @@ jobs:
           brew test corvidlabs/tap/augur
           brew test corvidlabs/tap/attest
           brew test corvidlabs/tap/corvid-trust
+          brew test corvidlabs/tap/rune
