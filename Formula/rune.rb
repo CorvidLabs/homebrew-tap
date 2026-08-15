@@ -1,8 +1,8 @@
 class Rune < Formula
   desc "Universal TTY ↔ AI Agent bridge and Ruby CLI framework"
   homepage "https://github.com/CorvidLabs/rune"
-  url "https://github.com/CorvidLabs/rune/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "b02c205d3e465e3abe32fab30209770425e1fde07afa8442034435c27aacc9ba"
+  url "https://github.com/CorvidLabs/rune/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "239a1e5a4fdd404f989a48cbed674051dd71d647f16826143348c540c5aa7a6f"
   license "MIT"
   head "https://github.com/CorvidLabs/rune.git", branch: "main"
 
