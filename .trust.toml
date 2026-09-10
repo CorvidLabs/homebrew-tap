@@ -1,0 +1,22 @@
+schema_version = 1
+profile = "standard"
+
+[lifecycle]
+command = ["fledge", "lanes", "run", "verify"]
+
+[contract]
+enabled = false
+require_coverage = 0
+skip_reason = "Homebrew tap ships declarative packaging metadata, not a module API to spec"
+
+[risk]
+threshold = "block"
+
+[provenance]
+mode = "soft"
+policy = ".attest.json"
+skip_reason = ""
+
+[atlas]
+enabled = false
+skip_reason = "Tap has no module API surface to publish"
