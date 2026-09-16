@@ -1,27 +1,30 @@
 class Hi < Formula
   desc "Acceptance criteria in human words, with permanent ids"
   homepage "https://corvidlabs.xyz/hi"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/CorvidLabs/hi/releases/download/v#{version}/hi-aarch64-apple-darwin.tar.gz"
-      sha256 "246be94af64fcb9fcd78c6010c7bf1bdb70aa8f3ad0713b4b977c1025e7236d5"
+      sha256 "d740896c0af94a295b9a2652cc11f7bc862eec899993f041bd5cfbf03ea43964"
     end
 
     on_intel do
       url "https://github.com/CorvidLabs/hi/releases/download/v#{version}/hi-x86_64-apple-darwin.tar.gz"
-      sha256 "5472d87d0cc06ab0c9aeb3e8b69f2fc6c55527cce1cb347dee4279939cac2fea"
+      sha256 "a855eb91f16e2ff89f1c5b306dcf0e2ae82c97f05f7d9928700c7b8309b95ac8"
     end
   end
 
   on_linux do
-    # Linux arm64 is deliberately absent: hi's release workflow does not build
-    # aarch64-unknown-linux-gnu yet, so there is no asset to check a sha against.
+    on_arm do
+      url "https://github.com/CorvidLabs/hi/releases/download/v#{version}/hi-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "949d2896f954da9f011c9b75ec3b45df3d5a6c577de33533622c23e7a2dbf2a1"
+    end
+
     on_intel do
       url "https://github.com/CorvidLabs/hi/releases/download/v#{version}/hi-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ed311f20eb4bca4e38c002b27fd24fdabf3c47cb788a2b73153b93339025bd5d"
+      sha256 "c0d7f5f52aaf136094e1f202cb63577907900647acb6e05a60f010d5884be856"
     end
   end
 
