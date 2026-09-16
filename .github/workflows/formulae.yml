@@ -34,6 +34,7 @@ jobs:
           corvidlabs/tap/attest
           corvidlabs/tap/corvid-trust
           corvidlabs/tap/rune
+          corvidlabs/tap/hi
       - name: Verify installed commands
         run: |
           fledge --version
@@ -42,6 +43,7 @@ jobs:
           attest --version
           fledge trust --version
           rune version --json
+          hi --version
       - name: Run formula tests
         env:
           HOMEBREW_NO_AUTO_UPDATE: "1"
@@ -52,3 +54,4 @@ jobs:
           brew test corvidlabs/tap/attest
           brew test corvidlabs/tap/corvid-trust
           brew test corvidlabs/tap/rune
+          brew test corvidlabs/tap/hi
