@@ -20,6 +20,7 @@ brew install corvidlabs/tap/<formula>
 | `corvid-trust` | Unified lifecycle, contract, risk, and provenance gate (bundles fledge, spec-sync, augur, attest) |
 | `rune` | Universal TTY ↔ AI Agent bridge and Ruby CLI framework |
 | `threemd` | CLI for the 3md format: Markdown extended along one free Z axis |
+| `hi` | Acceptance criteria in human words, with permanent ids |
 
 Each formula pins an exact, checksum-verified release of its upstream repository.
 
