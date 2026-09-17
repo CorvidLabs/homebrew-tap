@@ -1,30 +1,30 @@
 class Hi < Formula
   desc "Acceptance criteria in human words, with permanent ids"
   homepage "https://corvidlabs.xyz/hi"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/CorvidLabs/hi/releases/download/v#{version}/hi-aarch64-apple-darwin.tar.gz"
-      sha256 "6dd77ab3e52cac3f02be73940858b5a721d77901ef8383b8e12b712a98142e95"
+      sha256 "0dbbfed37eb8c15bae8df0d734dd9f263526c8a2db84d5f162c658b942a89584"
     end
 
     on_intel do
       url "https://github.com/CorvidLabs/hi/releases/download/v#{version}/hi-x86_64-apple-darwin.tar.gz"
-      sha256 "feba5ca83919b1dcc35a1982a624a0d91f3773110a236e4c40cbeb93e95f0502"
+      sha256 "e066b5dd8c761a27ded1c172756b2b7aa36b1a366784c008a24f9efd3d437345"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/CorvidLabs/hi/releases/download/v#{version}/hi-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cd3e574839f49b1e1f10b3d0644e417634c8a4cf570e25c3caa98faacbbdc5c8"
+      sha256 "33d8141e08adab4bc614ef5cca6c0968681e478ba2a7dd17e24d37a7e79d0332"
     end
 
     on_intel do
       url "https://github.com/CorvidLabs/hi/releases/download/v#{version}/hi-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "292f9acde69cb9de272fdeb355309a3ce6de1a60d603026e1af4ffb5d2df982e"
+      sha256 "6150d6210ae1d12cd932a4d3ad7880e3737395c3656b47c69a49c28dea365e2e"
     end
   end
 
