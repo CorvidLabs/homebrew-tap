@@ -7,7 +7,7 @@ class Threemd < Formula
   head "https://github.com/CorvidLabs/3md.git", branch: "main"
 
   depends_on xcode: ["15.0", :build]
-  depends_on macos: :big_sur
+  depends_on :macos
 
   def install
     system "swift", "build", "--disable-sandbox", "--configuration", "release", "--product", "threemd"
