@@ -15,7 +15,12 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest]
-    runs-on: ${{ matrix.os }}
+    # Run the ubuntu-latest leg on ubuntu-24.04 while ubuntu-latest rolls over to 26.04:
+    # 26.04 ships libxml2 under the new SONAME libxml2.so.16, and the prebuilt augur
+    # binary still needs libxml2.so.2. matrix.os stays ubuntu-latest, so the job keeps
+    # the required check name "Install (ubuntu-latest)". Revert to
+    # `runs-on: ${{ matrix.os }}` once CorvidLabs/augur#59 ships a fixed binary.
+    runs-on: ${{ matrix.os == 'ubuntu-latest' && 'ubuntu-24.04' || matrix.os }}
     steps:
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: Homebrew/actions/setup-homebrew@18fcb8e3e06b4247c676c506750dc95ea7226479 # main, 2026-07-10
