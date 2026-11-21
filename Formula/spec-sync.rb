@@ -1,30 +1,30 @@
 class SpecSync < Formula
   desc "Bidirectional spec-to-code validation for CI-enforced contracts"
   homepage "https://corvidlabs.xyz/spec-sync"
-  version "6.4.0"
+  version "6.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/CorvidLabs/spec-sync/releases/download/v#{version}/specsync-macos-aarch64.tar.gz"
-      sha256 "c87c04e7ff9c038785eb837906b6f78fab95bea4e3c1d3d1a63f0f274a26ac19"
+      sha256 "9c9611ee1e4d34471ad6bf86e7db3d7c094bb996b4bbe2276b72b3b35e31b053"
     end
 
     on_intel do
       url "https://github.com/CorvidLabs/spec-sync/releases/download/v#{version}/specsync-macos-x86_64.tar.gz"
-      sha256 "abee70d6ae5b0cf842920d8b586f4a5786cd8eaa87464575f64e27978f0d4b6b"
+      sha256 "d3c67f858f5b2cab86413e65adf47cf488200c8ad311e33ee36e1355b6746248"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/CorvidLabs/spec-sync/releases/download/v#{version}/specsync-linux-aarch64.tar.gz"
-      sha256 "82848ccfe12f6c3ba6b24866c4eaa9e0f63ae6e85f4049ef4c60f62bbef09e18"
+      sha256 "bf0f7e63410c9fad2f496a0b82253300a6ad327fe39920821a5144a91999b69a"
     end
 
     on_intel do
       url "https://github.com/CorvidLabs/spec-sync/releases/download/v#{version}/specsync-linux-x86_64.tar.gz"
-      sha256 "b6eae6f26e45c183f53ab168692a509bbff983ba50e26d3dc6dc3eefc775ca22"
+      sha256 "1e8c88530a24d40215fa211374247449cffbd99a9d41a652a995649cf4806446"
     end
   end
 
